@@ -1,0 +1,29 @@
+   1  git
+    2  cd /c
+    3  mkdir git-samples
+    4  mkdir test1
+    5  cd git-samples
+    6  mkdir test1
+    7  cd test1/
+    8  git clone https://github.com/Microsoft/dotnet-samples.git
+    9  cd..
+   10  cd ..
+   11  mkdir test2
+   12  cd test2
+   13  git clone https://github.com/web4sajid/git-repo1.git
+   14  ls
+   15  cd git-repo1/
+   16  ls
+   17  cp ..
+   18  cp ../../test1/dotnet-samples/* .
+   19  cp -r ../../test1/dotnet-samples/* .
+   20  ls -ltr
+   21  git status
+   22  git add *
+   23  git status
+   24  git commit -m "Initial addition of files"
+   25   git config --global user.email "web4sajid@gmail.com"
+   26   git config --global user.name "web4sajid"
+   27  git commit -m "Initial addition of files"
+   28  git push origin master
+   29  history
